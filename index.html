@@ -233,7 +233,8 @@
                         <p class="d-flex align-items-center justify-content-center"><img
                                 src="./assets/img/logos/cyber-security.svg" alt="." class="avatar">Cyber Security</p>
                         <p class="d-flex align-items-center justify-content-center"><img
-                                src="./assets/img/logos/technical-support.svg" alt="." class="avatar">IT Professional</p>
+                                src="./assets/img/logos/technical-support.svg" alt="." class="avatar">IT Professional
+                        </p>
                     </div>
                 </div>
             </div>
@@ -392,16 +393,23 @@
             </div>
             <div class="row justify-content-center">
                 <div class="card" data-aos="fade-up" data-aos-duration="1000">
-                    <iframe src="https://jaym20.github.io/" frameborder="0" height="500px" class="card-img-top"></iframe>
+                    <iframe src="https://jaym20.github.io/" frameborder="0" height="500px"
+                        class="card-img-top"></iframe>
                     <div class="card-body">
-                        <h6 class="card-text text-center">Digital Portfolio</h6>
+                        <h6 class="card-text text-center">
+                            <a href="https://jaym20.github.io/" target="_blank" rel="noopener noreferrer">Digital
+                                Portfolio</a>
+                        </h6>
                     </div>
                 </div>
                 <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
                     <iframe src="https://jaym20.github.io/ConFusion/" frameborder="0" height="500px"
                         class="card-img-top"></iframe>
                     <div class="card-body">
-                        <h6 class="card-text text-center">con Fusion - restraurant website</h6>
+                        <h6 class="card-text text-center">
+                            <a href="https://jaym20.github.io/ConFusion/" target="_blank" rel="noopener noreferrer">con
+                                Fusion - restraurant website</a>
+                        </h6>
                     </div>
                 </div>
             </div>
@@ -447,21 +455,28 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <form method="POST">
+                            <form method="POST" class="gform"
+                                action="https://script.google.com/macros/s/AKfycbzyyMcLrnmkC6cqFLlDZAcUoP4PsKYZ6dMsDh4/exec">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Name <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control" placeholder="Enter your name" required>
+                                    <input type="text" name="Name" class="form-control" placeholder="Enter your name"
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address <span
                                             class="text-danger">*</span></label>
-                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                                    <input type="email" name="Email" class="form-control" placeholder="Enter your email"
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Message <span
                                             class="text-danger">*</span></label>
-                                    <textarea class="form-control" placeholder="Your message goes here"
+                                    <textarea class="form-control" name="Message" placeholder="Your message goes here"
                                         required></textarea>
+                                </div>
+                                <div style="display:none" class="thankyou_message">
+                                    <h6><em>Thanks</em> for contacting! I will get back to you soon!
+                                    </h6>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
@@ -487,6 +502,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/script-jquery.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/form-submission-handler.js" data-cfasync="false" type="text/javascript"></script>
 </body>
 
 </html>
