@@ -1,0 +1,38 @@
+@media only screen and (max-width: 991px) {
+  .about {
+    padding: 0 70px;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .intro {
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .about {
+    width: 100%;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .pop-nav {
+    display: none;
+  }
+
+  #mob-icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about {
+    padding: 0 10px;
+  }
+  html {
+    font-size: 20px;
+  }
+}
