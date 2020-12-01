@@ -1,24 +1,26 @@
 window.onload = function () {
   $('.preloader-wrapper').fadeOut();
   $('body').removeClass('overflow-hidden');
-  $("#bounce")
-  .delay(500)
-    .slideUp()
-    .slideDown()
-    .animate({ fontSize: "100px" }, 500)
-    .animate({ fontSize: "50px" });
-  $("#name")
-    .delay(1000)
-    .slideUp()
-    .slideDown()
-    .animate({ fontSize: "50px" }, "fast")
-    .animate({ fontSize: "70px" });
-  $("#positionBox")
-    .delay(1500)
-    .slideUp()
-    .slideDown()
-    .animate({ fontSize: "70px" }, "fast")
-    .animate({ fontSize: "50px" });
+  if ($(window).width() > 700) {
+    $("#bounce")
+    .delay(500)
+      .slideUp()
+      .slideDown()
+      .animate({ fontSize: "100px" }, 500)
+      .animate({ fontSize: "50px" });
+    $("#name")
+      .delay(1000)
+      .slideUp()
+      .slideDown()
+      .animate({ fontSize: "50px" }, "fast")
+      .animate({ fontSize: "70px" });
+    $("#positionBox")
+      .delay(1500)
+      .slideUp()
+      .slideDown()
+      .animate({ fontSize: "70px" }, "fast")
+      .animate({ fontSize: "50px" });
+  }
 };
 
 // $(document).keydown(function (event) {
