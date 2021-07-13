@@ -1,7 +1,7 @@
 AOS.init();
 
 // Position Changing Function
-var positions = ["a web developer", "an ethical hacker", "a cloud engineer", "a graphics designer"];
+var positions = ["a web developer", "a data analyst", "a cloud engineer", "a graphics designer"];
 var position = document.getElementById("position");
 var i = 0;
 function positionChange() {
